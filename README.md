@@ -200,6 +200,7 @@ Salin kode
   }
 }
 ~~~
+~~~
 7 Prinsip RESTful API (Sudah Diterapkan)
 No	Prinsip	Implementasi
 1	Resource-Oriented URI	/api/students menggunakan kata benda jamak
@@ -209,7 +210,8 @@ No	Prinsip	Implementasi
 5	JSON Representation	Semua response dalam format JSON
 6	Validation & Error Handling	Middleware validateStudent dan errorHandler
 7	Discoverability	Endpoint /api/info menyediakan metadata API
-
+~~~
+~~~
 Pengujian di Postman
 Method	Endpoint	Deskripsi	Status
 GET	/api/students	Ambil semua mahasiswa	✅ 200 OK
@@ -218,7 +220,9 @@ GET	/api/students/:id	Ambil 1 mahasiswa	✅ 200 / 404
 PUT	/api/students/:id	Perbarui data mahasiswa	✅ 200
 DELETE	/api/students/:id	Hapus mahasiswa	✅ 204
 GET	/api/info	Info prinsip REST API	✅ 200
+~~~
 
+~~~
 🧾 Bukti Screenshot (Wajib Disertakan)
 ✅ GET /api/students → 200 OK
 
@@ -230,28 +234,30 @@ GET	/api/info	Info prinsip REST API	✅ 200
 
 ✅ DELETE /api/students/:id → 204 No Content
 (Opsional tambahan: 400 Bad Request & 404 Not Found)
-
+~~~
 Catatan
 Jalankan server dengan perintah:
 
 bash
 Salin kode
+~~~
 npm run dev
 Port default: 3000
-
+~~~
 Semua response dalam JSON format
 
 Data disimpan sementara (in-memory array)
 
 Resource sesuai ketentuan: digit akhir NIM = 0 → students
-
+~~~
 Author
 Nama: Muhammad Riduwan
 NIM: 230104040080
 Kelas: TI 4B
 Tahun: 2025
-
+~~~
 yaml
 Salin kode
+
 
 
