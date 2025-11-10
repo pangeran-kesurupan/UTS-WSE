@@ -1,0 +1,21 @@
+{
+  "name": "uts-wse-230104040080",
+  "version": "1.0.0",
+  "description": "UTS Web Service Engineering - students resource",
+  "main": "src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "morgan": "^1.10.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
