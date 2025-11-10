@@ -70,23 +70,27 @@ Response:
 
 json
 Salin kode
+~~~
 {
   "status": "success",
   "data": [
     { "id": "uuid", "name": "Siti Rahma", "nim": "230104040001", "major": "Teknologi Informasi" }
   ]
 }
+~~~
 2️⃣ GET /api/students/:id
 Menampilkan data mahasiswa berdasarkan ID.
 Contoh URL:
 
 bash
 Salin kode
+~~~
 http://localhost:3000/api/students/7c4e38e1-41d3-4b2e-9f36-8df3ac39a444
 Response:
-
+~~~
 json
 Salin kode
+~~~
 {
   "status": "success",
   "data": {
@@ -96,21 +100,24 @@ Salin kode
     "major": "Teknologi Informasi"
   }
 }
+~~~
 3️⃣ POST /api/students
 Menambahkan data mahasiswa baru.
 Body (JSON):
 
 json
 Salin kode
+~~~
 {
   "name": "Agus Pratama",
   "nim": "230104040080",
   "major": "Teknologi Informasi"
 }
 Response (201 Created):
-
+~~~
 json
 Salin kode
+~~~
 {
   "status": "success",
   "message": "Student created",
@@ -122,8 +129,9 @@ Salin kode
   }
 }
 Jika field kurang → 400 Bad Request:
-
+~~~
 json
+~~~
 Salin kode
 {
   "status": "fail",
@@ -132,18 +140,20 @@ Salin kode
 4️⃣ PUT /api/students/:id
 Memperbarui data mahasiswa berdasarkan ID.
 Body (JSON):
-
+~~~
 json
 Salin kode
+~~~
 {
   "name": "Agus P.",
   "nim": "230104040080",
   "major": "Sistem Informasi"
 }
 Response:
-
+~~~
 json
 Salin kode
+~~~
 {
   "status": "success",
   "message": "Student updated",
@@ -154,6 +164,7 @@ Salin kode
     "major": "Sistem Informasi"
   }
 }
+~~~
 5️⃣ DELETE /api/students/:id
 Menghapus data mahasiswa berdasarkan ID.
 Response:
@@ -167,6 +178,7 @@ Response:
 
 json
 Salin kode
+~~~
 {
   "status": "success",
   "message": "UTS WSE — RESTful API Info",
@@ -187,7 +199,7 @@ Salin kode
     ]
   }
 }
-
+~~~
 7 Prinsip RESTful API (Sudah Diterapkan)
 No	Prinsip	Implementasi
 1	Resource-Oriented URI	/api/students menggunakan kata benda jamak
@@ -241,4 +253,5 @@ Tahun: 2025
 
 yaml
 Salin kode
+
 
