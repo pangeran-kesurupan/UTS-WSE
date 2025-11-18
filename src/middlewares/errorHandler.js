@@ -1,9 +1,8 @@
-const { fail } = require("../helpers/response");
-
-function errorHandler(err, req, res, next) {
-  console.error(err);
-  const status = err.status || 500;
-  return res.status(status).json(fail(err.message || "Internal Server Error"));
-}
-
-module.exports = errorHandler;
+// src/middlewares/errorHandler.js
+module.exports = (err, req, res, next) => {
+  console.error(err.stack);
+  res.status(err.status || 500).json({
+    status: "error",
+    message: err.message || "Internal Server Error"
+  });
+};
